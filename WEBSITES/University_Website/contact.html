@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width ,initial-scale=1.0">
+	<title>
+		University Website Design
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<!-- ---------------header---------------
+ -->	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="pictures/logo.png"></a>
+			<div class="nav-link" id="navlink">
+			   <i class="fas fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<h1> Contact Us. </h1>
+	
+	</section>
+<!-- --Contact-content-----------> 
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78155351889!2d7.379826773268233!3d9.024418912857271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja!5e0!3m2!1sen!2sng!4v1646228696457!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+</section>
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa-brands fa-facebook"></i>
+				<span>
+					<h5> Abuja, Lugbe Area</h5>
+					<p> Amac market Street, King's Gate</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa-brands fa-facebook"></i>
+				<span>
+					<h5> +23401179013353</h5>
+					<p> Monday to Saturday, 8AM to 6PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa-brands fa-facebook"></i>
+				<span>
+					<h5> omolerjjjj@gmail.com</h5>
+					<p> Email us for any enquires
+					</p>
+				</span>
+			</div>
+			
+		</div>
+		<div class="contact-col">
+			<form action="form-hndler.php" method="post">
+				<input type="text" name="name" placeholder="Enter Your Name" required>
+				<input type="Email" name="email" placeholder="Enter Your Email Address" required>
+				<input type="text" name="subject" placeholder="Enter Your Subject" required>
+				<textarea rows="10" placeholder="message" required=""></textarea>
+				<button type="submit" class="hero-btn red-btn" > Send Message</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-----------FOOTER-------------- -->
+<section class="footer">
+	<h4> About Us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+	quicommodolaborum.</p>
+	<div class="icons">
+		<i class="fa-brands fa-facebook"></i>
+		<i class="fa-brands fa-instagram"></i>
+		<i class="fa-brands fa-twitter"></i>
+		<i class="fa-brands fa-linkedin"></i>
+
+	</div>
+	<p> Made with <i class="fa-solid fa-heart"></i> by Max</p>
+
+
+
+<script >
+	var navlink = document.getElementById("navlink");
+	function showMenu(){
+		navlink.style.right = "0";
+	}
+	function hideMenu(){
+		navlink.style.right = "-200px";
+	}
+</script>
+</body>
+</html>
